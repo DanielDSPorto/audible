@@ -1,4 +1,4 @@
-function BotoesControle() {
+function BotoesControle({ tocarOuPausar, musicaTocando }) {
   return (
     <div className="caixa-botoes">
       <button>
@@ -7,8 +7,14 @@ function BotoesControle() {
       <button>
         <i className="bi bi-arrow-counterclockwise"></i>
       </button>
-      <button className="play-pause" style={{ fontSize: '3rem' }}>
-        <i className="bi bi-pause-circle-fill"></i>
+      <button
+        className="play-pause"
+        style={{ fontSize: '3rem' }}
+        onClick={tocarOuPausar}>
+        <i
+          className={`bi bi-${
+            musicaTocando ? 'pause' : 'play'
+          }-circle-fill`}></i>
       </button>
       <button>
         <i className="bi bi-arrow-clockwise"></i>

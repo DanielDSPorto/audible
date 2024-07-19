@@ -5,7 +5,7 @@ const SeletorCapitulos = ({ quantidadeCapitulos, capituloAtual }) => {
   return (
     <button className="seletor">
       <FontAwesomeIcon icon={faBars} />
-      <p>{`Capítulo ${capituloAtual}`}</p>
+      <p>{`Capítulo ${capituloAtual + 1}`}</p>
     </button>
   );
 };

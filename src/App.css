@@ -118,7 +118,6 @@
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  max-width: 400px;
   & > button {
     background-color: transparent;
     border: none;
@@ -126,6 +125,17 @@
   }
   & :not(:first-child):not(:last-child) {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .metricas-tempo,
+  .caixa-botoes {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .capa {
+    margin-top: 15dvh;
   }
 }
 
